@@ -30,7 +30,7 @@ Number of classes in the dataset is 43 which can be inferred by looking for uniq
 
 Images for each class is plotted in Step 1 and Number of images in each class is plotted for y_train, y_valid and y_test.
 
-![](/readme_images/1.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/1.jpg)
 
 # Design and Test a Model Architecture:
 
@@ -71,7 +71,7 @@ Optimizer is used for training the model by minimizing the loss. In our training
 
 By training the input dataset over this final architecture project required accuracy can be achieved. Graph below shows for considered Hyperparameter and architecture how for each EPOCH the accuracy keeps increasing.
 
-![](/readme_images/2.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/2.jpg)
 
 **Solution Approach:**
 
@@ -83,14 +83,14 @@ With the initial base architecture without proper regularization technique we co
   Without Dropout  
   This is my first trained model Training accuracy Graph!!
 
-![](/readme_images/3.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/3.jpg)
 
   EPOCH 1000  
   BATCH 256  
   RATE 0.001  
   DROPOUT1 0.5 [Only one Dropout used]  
 
-![](/readme_images/4.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/4.jpg)
 
   EPOCH 1000  
   BATCH 256  
@@ -98,7 +98,7 @@ With the initial base architecture without proper regularization technique we co
   2 – DROPOUT 1,2 0.5  
   Max accuracy: 0.932  
 
-![](/readme_images/5.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/5.jpg)
 
   EPOCH 1000  
   BATCH 256  
@@ -106,7 +106,7 @@ With the initial base architecture without proper regularization technique we co
   2 – DROPOUT 1,2 0.5  
   Max accuracy: 0.897  
 
-![](/readme_images/6.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/6.jpg)
 
   EPOCH 1000  
   BATCH 128  
@@ -114,7 +114,7 @@ With the initial base architecture without proper regularization technique we co
   2 - DROPOUT1,2 0.75  
   Max Accuracy : 0.937
 
-![](/readme_images/7.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/7.jpg)
 
   EPOCH_1000  
   BATCH_128  
@@ -122,7 +122,7 @@ With the initial base architecture without proper regularization technique we co
   2 - DROPOUT1,2 0.5  
   Max Accuracy : 0.899  
 
-![](/readme_images/8.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/8.jpg)
 
   Untill now Shuffled input were not used. For the first time input shuffling is tried.  
   EPOCH_500  
@@ -131,7 +131,7 @@ With the initial base architecture without proper regularization technique we co
   DROPOUT1 0.75  
   Max Accuracy 0.93
   
-![](/readme_images/9.jpg)  
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/9.jpg)  
   
   Shuffled input  
   EPOCH_500  
@@ -140,7 +140,7 @@ With the initial base architecture without proper regularization technique we co
   2- DROPOUT-1,2 0.75  
   Max Accuracy : 0.948
 
-![](/readme_images/10.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/10.jpg)
 
 In last two graphs we could see accuracy is very high right at 1st EPOCH and could reach high accuracy but still testing accuracy could not go above 0.93. After reading through few architectures then came out with used architecture in section Model Architecture with which high accuracy could be achieved in less EPOCH and testing accuracy aswell passed the requirement.
 
@@ -148,7 +148,7 @@ In last two graphs we could see accuracy is very high right at 1st EPOCH and cou
 
 Following five images are chosen for testing the model and it passed with 100% accuracy.
 
-![](/readme_images/11.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/11.jpg)
 
   11 – Right-of-way at the next intersection  
   10 – No passing for vehicles over 3.5 metric tons  
@@ -158,4 +158,4 @@ Following five images are chosen for testing the model and it passed with 100% a
 
 Top 5 softmax based on these images are also determined and are as below.
 
-![](/readme_images/12.jpg)
+![](/CarND-Traffic-Sign-Classifier-Project/readme_images/12.jpg)
